@@ -1,15 +1,13 @@
-package com.fa.beans;
+package com.fa.bean;
 
 import java.util.Date;
 
-public class WishMessageGenerator {
+public class WishMessageGenrator {
 	private Date date;
 	
-	//setter injection
-	public void setDate(Date date) {
+	public WishMessageGenrator(Date date) {
 		this.date=date;
 	}
-	
 	public String wishMessage(String user) { 
 		int hour=date.getHours();
 		if(hour<12)
