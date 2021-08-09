@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean name="stud" class="com.fa.comp.Student">
+	<constructor-arg value="101"/>
+	<constructor-arg value="Ansari"/>
+	<constructor-arg value="Hyderabad"/>
+	</bean>
+
+</beans>
