@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean name="stud" class="com.fa.beans.Student">
+	
+	<!-- <constructor-arg value="101"/>
+	<constructor-arg value="Faizan"/>
+	<constructor-arg value="Bilaspur"/>
+	<constructor-arg value="50000"/> -->
+	
+	<!-- By Using Index -->
+	<!-- <constructor-arg index="1" value="Faizan"/>
+	<constructor-arg index="2" value="Bilaspur"/>
+	<constructor-arg index="0" value="101"/>
+	<constructor-arg index="3" value="50000"/> -->
+	
+	<!-- By using Name -->
+	<!-- <constructor-arg name="sname" value="Faizan"/>
+	<constructor-arg name="saddrs" value="Bilaspur"/>
+	<constructor-arg name="sno" value="101"/>
+	<constructor-arg name="fee" value="50000"/> -->
+	
+	<!-- By using Type -->
+	<constructor-arg type="String" value="Faizan"/>
+	<constructor-arg type="String" value="Bilaspur"/>
+	<constructor-arg type="int" value="101"/>
+	<constructor-arg type="float" value="50000"/>
+	
+	</bean>
+
+</beans>
