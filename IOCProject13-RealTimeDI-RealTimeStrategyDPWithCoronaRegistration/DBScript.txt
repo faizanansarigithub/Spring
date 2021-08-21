@@ -1,0 +1,19 @@
+For Table:-
+--------------------
+
+CREATE TABLE "SYSTEM"."SPRING_CORONA" 
+   (	"SNO" NUMBER NOT NULL ENABLE, 
+	"PNAME" VARCHAR2(20 BYTE), 
+	"PADDRS" VARCHAR2(20 BYTE), 
+	"TOTALAMT" FLOAT(126), 
+	"ADHARNO" LONG, 
+	 CONSTRAINT "SPRING_CORONA_PK" PRIMARY KEY ("SNO"));
+	 ===========================================================================================
+	 For Sequence :-
+	 -----------------------
+	 
+	 CREATE SEQUENCE  "SYSTEM"."CP_SEQ"  MINVALUE 1 MAXVALUE 49000 INCREMENT BY 1 START WITH 1;
+	 
+	 
+	 
+	 
