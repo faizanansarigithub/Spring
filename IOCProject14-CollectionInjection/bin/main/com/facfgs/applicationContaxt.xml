@@ -5,14 +5,15 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
 	<bean id="ms" class="com.fa.bean.Marks">
 	<property name="mark">
-	<array>
-	<value>10</value>
-	<value>20</value>
-	<value>30</value>
-	</array>
+		<array>
+			<value>10</value>
+			<value>20</value>
+			<value>30</value>
+		</array>
 	</property>
 	</bean>
 	<bean id="clg" class="com.fa.bean.College">
+	
 		<property name="studentName">
 		<list>
 			<value>Faizan</value>
@@ -21,6 +22,43 @@
 			<value>Faizan</value>
 		</list>
 		
+		</property> 
+		<property name="dateList">
+		<array>
+			<ref bean="date"/>
+		</array>
 		</property>
 	</bean>
+	<bean id="date" class="java.util.Date">
+	<property name="year" value="121"/>
+	<property name="month" value="7"/>
+	<property name="date" value="22"/>
+	</bean>
+	<bean id="dob" class="java.util.Date"/>
+	<!-- Map Class configuration -->
+	<bean id="uInfo" class="com.fa.bean.UniversityInfo">
+		<property name="facultyDetails">
+			<map>
+				<entry key="10003" value="FAizan"/>
+				<entry><key><value>10001</value></key>
+				<value>Ansari</value>
+				</entry>
+			</map>
+		</property>
+	<property name="datesInfo">
+	<map>
+		<entry key="dob" value-ref="date"/>
+		<entry key="dob1" value-ref="dob"/>
+	</map>
+	</property>
+	<property name="fruits">
+	<props>
+		<prop key="banana">Yellow</prop>
+		<prop key="graps">Green</prop>
+		<prop key="apple">Red</prop>
+		<prop key="mango">Yellow</prop>
+		</props>
+	</property>
+	</bean>
+	
 </beans>
