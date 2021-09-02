@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="baseBike" class="com.fa.beans.Bike" abstract="true">
+	<constructor-arg name="bikeNo" value="CG04HZ1285"/>
+	<constructor-arg name="color" value="Black"/>
+	<constructor-arg name="engineNo" value="PLSA234789"/>
+	<constructor-arg name="owner" value="Faizan"/>
+	<constructor-arg name="type" value="Sports"/>
+	</bean>
+	
+	<bean id="palsarBike" class="com.fa.beans.Bike" parent="baseBike">
+	<constructor-arg name="bikeNo" value="CG04UZ1287"/>
+	<constructor-arg name="color" value="blue"/>
+	<constructor-arg name="engineNo" value="PLSA234778"/>
+	</bean>
+	
+</beans>
