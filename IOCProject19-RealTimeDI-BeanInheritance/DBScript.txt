@@ -1,0 +1,13 @@
+
+  CREATE TABLE "SYSTEM"."SPRING_CUSTOMER" 
+   (	"CNO" NUMBER NOT NULL ENABLE, 
+	"CNAME" VARCHAR2(20 BYTE), 
+	"CADDRS" VARCHAR2(20 BYTE), 
+	"PAMT" FLOAT(126), 
+	"INTRSTAMT" FLOAT(126), 
+	 CONSTRAINT "SPRING_CUSTOMER_PK" PRIMARY KEY ("CNO"));
+	 =============================================================================================
+	  CREATE SEQUENCE  "SYSTEM"."CUS_SEQ"  MINVALUE 1 MAXVALUE 90000 INCREMENT BY 1 START WITH 1 ;
+	 
+	 
+	 
